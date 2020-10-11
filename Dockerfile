@@ -19,6 +19,5 @@ FROM scratch
 # Copy our static executable.
 COPY --from=builder /go/bin/app /go/bin/app
 WORKDIR /
-add static /static
 # Run the hello binary.
 ENTRYPOINT ["/go/bin/app"]
